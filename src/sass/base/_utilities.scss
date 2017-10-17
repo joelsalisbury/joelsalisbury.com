@@ -1,0 +1,68 @@
+// Our Utilities
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+.u-floatRight{
+	float:right;
+}
+
+[class*='column-'] {
+    float: left;
+    padding: 1em;
+    width: 100%;
+    min-height: 1px; 
+}  
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrapper-narrow {
+    max-width:50em;
+    margin:0 auto;
+}
+
+.wrapper-super-narrow {
+    width:40em;
+    max-width:100%;
+    margin:0 auto;
+}
+
+.u-vCenter {
+    display: table;
+    position: relative;
+    height: 100%;
+
+    z-index: 2;
+}
+
+.u-textCenter {
+    text-align: center;
+}
+
+.u-floatRight {
+    float:right;
+}
+
+.u-vCenter>div {
+    display: table-cell;
+    vertical-align: middle;
+}
+ 
+@media screen and (min-width: $desktopWidth)  {
+    .wrapper {      
+        max-width: $grid-max-width;     
+        display:flex;
+        justify-content: center;
+    }
+
+    @for $i from 1 through $grid-columns {      
+        .column-#{$i} {         
+            width: 100% / $grid-columns * $i;   
+            }           
+    }   
+}
