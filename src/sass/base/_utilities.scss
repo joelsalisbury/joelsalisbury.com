@@ -1,5 +1,19 @@
 // Our Utilities
 
+.btn {
+    display:inline-block;
+    background-color:$lightGray;
+    color:$darkGray;
+    padding:8px 12px;
+    text-decoration: none;
+    transition:.4s;
+    font-size:0.8rem;
+    &:hover {
+        background-color:darken($lightGray,30%);
+        color:$lightGray;
+    }
+}
+
 .clearfix {
   overflow: auto;
   zoom: 1;
@@ -14,6 +28,7 @@
     padding: 1em;
     width: 100%;
     min-height: 1px; 
+
 }  
 
 .wrapper {
@@ -56,8 +71,6 @@
 @media screen and (min-width: $desktopWidth)  {
     .wrapper {      
         max-width: $grid-max-width;     
-        display:flex;
-        justify-content: center;
     }
 
     @for $i from 1 through $grid-columns {      

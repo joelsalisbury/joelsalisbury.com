@@ -1,6 +1,6 @@
 // Global CSS goes here
 html, body {
-	font-family:"Chunk5", arial, sans-serif;
+	font-family: 'Droid Serif', serif;
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 24px;
@@ -14,11 +14,37 @@ html, body {
 
 .section {
 	min-height:95vh;
-	border-bottom:10px solid #444;
+	padding-top:40px;
+	padding-bottom:40px;
 }
 
 .hero {
-	
+	min-height:75vh;
+	background-color:#333;
+	color:$white;
+	display:flex;
+	align-items:center;
+	h1 {
+		font-family: 'Alfa Slab One', serif;
+		letter-spacing: 2px;
+		font-weight:100;
+		font-size:3rem;
+		line-height:2.8rem;
+	}
 }
 
+.service {
+	border-right:1px solid $lightGray;
 
+
+	div {
+		
+		
+	}
+
+	&:last-child {
+		border-right:none;
+	}
+}
+
+ 
