@@ -387,7 +387,8 @@ html, body {
     line-height: 2.8rem; }
 
 .service {
-  border-right: 1px solid #eee; }
+  border-right: 1px solid #eee;
+  margin-top: 10px; }
   .service:last-child {
     border-right: none; }
 
