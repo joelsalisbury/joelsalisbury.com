@@ -8,9 +8,18 @@
     text-decoration: none;
     transition:.4s;
     font-size:0.8rem;
+
     &:hover {
         background-color:darken($lightGray,30%);
         color:$lightGray;
+    }
+
+    &.dark {
+        background-color:$darkGray;
+        color:$lightGray;
+        &:hover {
+            background-color:lighten($darkGray,30%);
+        }
     }
 }
 
