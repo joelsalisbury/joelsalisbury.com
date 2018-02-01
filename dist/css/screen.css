@@ -354,7 +354,7 @@ th {
   padding: 0; }
 
 html, body {
-  font-family: 'Droid Serif', serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
@@ -373,10 +373,11 @@ html, body {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  background-color: #ccc; }
 
 .section.about, .section.mywork {
-  background-color: #eee; }
+  background-color: #ddd; }
 
 .hero {
   min-height: 75vh;
@@ -396,9 +397,53 @@ html, body {
     line-height: 2.8rem; }
 
 .service {
-  border-right: 1px solid #eee; }
+  border: none; }
   .service:last-child {
     border-right: none; }
+
+.input-text, select {
+  width: 100%;
+  border-radius: 0px;
+  -webkit-appearance: none;
+  background: #FFFFFF;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.4);
+  letter-spacing: 0.58px;
+  border: 1px solid #333;
+  padding-left: 5px;
+  cursor: pointer; }
+
+label {
+  cursor: pointer;
+  color: #fff; }
+
+select {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  padding: 5px;
+  background: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'><path fill='#444' d='M7.406 7.828l4.594 4.594 4.594-4.594 1.406 1.406-6 6-6-6z'></path></svg>");
+  background-position: 100% 50%;
+  background-color: #fff;
+  background-repeat: no-repeat; }
+
+select > option {
+  -webkit-appearance: none;
+  background-color: #fff;
+  color: #000; }
+
+.input-single-line {
+  height: 38px;
+  padding: 5px 10px;
+  font-style: italic; }
+
+.input-wrap {
+  padding: 0.5em !important; }
+
+textarea {
+  height: 250px; }
+
+.contact .btn {
+  border: 1px solid #333; }
 
 .btn {
   display: inline-block;
